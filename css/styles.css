@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root {
+    --results-light-red: hsl(0, 100%, 67%);
+    --results-orangey-yellow: hsl(39, 100%, 56%);
+    --results-green-teal: hsl(166, 100%, 37%);
+    --results-cobalt-blue: hsl(234, 85%, 45%);
+    --gradient-slate-blue: hsl(252, 100%, 67%);
+    --gradient-royal-blue: hsl(241, 81%, 54%);
+    --gradient-violet-blue: hsla(256, 72%, 46%, 1);
+    --gradient-persian-blue: hsla(241, 72%, 46%, 0);
+    --results-white: hsl(0, 0%, 100%);
+    --results-pale-blue: hsl(221, 100%, 96%);
+    --results-light-lavender: hsl(241, 100%, 89%);
+    --results-dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.results-component-container {
+    width: 100%;
+}
+
+.results-component-container p {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+}
+
+/* ******************* RESULTS *********************** */
+
+.results-container {
+    padding: 20px;
+    text-align: center;
+    border-radius: 0 0 35px 35px;
+    background: linear-gradient(var(--gradient-slate-blue), var(--gradient-royal-blue));
+}
+
+.results-title {
+    opacity: 0.75;
+    font-weight: 700;
+}
+
+.results-container p {
+    color: white;
+}
+
+.results-score {
+    border: 1px solid transparent;
+    width: 120px;
+    height: 120px;
+    margin: 20px auto;
+    border-radius: 50%;
+    background: linear-gradient(var(--gradient-violet-blue), var(--gradient-persian-blue) 95%);
+    background-repeat: no-repeat;
+}
+
+.score {
+    margin-top: 20px;
+}
+
+.results-score .score {
+    font-size: 2.5em;
+    font-weight: 800;
+}
+
+.results-score .max-score {
+    opacity: 0.4;
+    font-size: 0.8em;
+}
+
+.results-component-container .results-status {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.results-component-container .results-description {
+    padding: 25px;
+    opacity: 0.75;
+    font-size: 0.93em;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: -15px;
+}
+
+/* **************** SUMMARY ************************** */
+
+.summary-container {
+    background-color: var(--results-white);
+    padding: 25px;
+}
+
+.results-component-container .summary-title {
+    margin-left: 10px;
+    font-weight: 700;
+    color: var(--results-dark-gray-blue);
+    font-size: 1.1em;
+}
+
+.results-component-container .skill {
+    position: relative;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.summary-container .skill p {
+    font-size: 1em;
+    display: inline-block;
+    position: relative;
+    bottom: 16px;
+}
+
+.skill img {
+    margin: 12px;
+    margin-left: 20px;
+}
+
+.summary-container .skill-score {
+    position: absolute;
+    right: -110px;
+}
+
+.summary-container .max-skill {
+    opacity: 0.6;
+}
+
+.reaction-container {
+    background-color: hsla(0, 100%, 67%, 0.05);
+}
+
+.reaction-container .skill-title {
+    color: var(--results-light-red);
+}
+
+button {
+    all: unset;
+    margin-top: 15px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    border-radius: 40px;
+    font-weight: 700;
+    font-size: 1.2em;
+    color: white;
+    background-color: var(--results-dark-gray-blue);
+}
+
+button:active {
+    background: linear-gradient(var(--gradient-slate-blue), var(--gradient-royal-blue));
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
