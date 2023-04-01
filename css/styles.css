@@ -48,7 +48,7 @@
 }
 
 .results-score {
-    border: 1px solid transparent;
+    position: relative;
     width: 120px;
     height: 120px;
     margin: 20px auto;
@@ -57,16 +57,20 @@
     background-repeat: no-repeat;
 }
 
-.score {
-    margin-top: 20px;
-}
-
 .results-score .score {
+    position: absolute;
+    left: 50%;
+    top: 23px;
+    transform: translatex(-50%);
     font-size: 2.5em;
     font-weight: 800;
 }
 
 .results-score .max-score {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    bottom: 35px;
     opacity: 0.4;
     font-size: 0.8em;
 }
@@ -134,6 +138,30 @@
     color: var(--results-light-red);
 }
 
+.memory-container {
+    background-color: hsla(39, 100%, 56%, 0.09);
+}
+
+.memory-container .skill-title {
+    color: var(--results-orangey-yellow);
+}
+
+.verbal-container {
+    background-color: hsla(166, 100%, 37%, 0.07);
+}
+
+.verbal-container .skill-title {
+    color: var(--results-green-teal);
+}
+
+.visual-container {
+    background-color: hsla(234, 85%, 45%, 0.05);
+}
+
+.visual-container .skill-title {
+    color: var(--results-cobalt-blue);
+}
+
 button {
     all: unset;
     margin-top: 15px;
@@ -158,4 +186,8 @@ button:active {
 
 .attribution a { 
     color: hsl(228, 45%, 44%);
+}
+
+@media only screen and  (min-width: 900px) {
+    
 }
