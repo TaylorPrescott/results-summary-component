@@ -20,6 +20,10 @@
     padding: 0;
 }
 
+body {
+    min-height: 100vh;
+}
+
 .results-component-container {
     width: 100%;
 }
@@ -92,6 +96,8 @@
 /* **************** SUMMARY ************************** */
 
 .summary-container {
+    width: 80vw;
+    margin: 0 auto;
     background-color: var(--results-white);
     padding: 25px;
 }
@@ -112,18 +118,17 @@
 .summary-container .skill p {
     font-size: 1em;
     display: inline-block;
-    position: relative;
-    bottom: 16px;
+    position: absolute;
+    top: 13px;
 }
 
 .skill img {
     margin: 12px;
-    margin-left: 20px;
+    
 }
 
 .summary-container .skill-score {
-    position: absolute;
-    right: -110px;
+    right: 15px;
 }
 
 .summary-container .max-skill {
@@ -188,6 +193,67 @@ button:active {
     color: hsl(228, 45%, 44%);
 }
 
-@media only screen and  (min-width: 900px) {
-    
+@media only screen and  (min-width: 860px) {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .results-component-container {
+        width: 700px;
+        height: 440px;
+        position: relative;
+        border-radius: 35px 0 0 35px;
+        box-shadow: 1px 5px 10px rgb(219, 213, 213);
+    }
+
+    .results-container, .summary-container {
+        width: 300px !important;
+        height: 400px;
+        display: inline-block;
+        margin: 0;
+        position: absolute;
+    }
+
+    .results-component-container .results-container {
+        height: 400px;
+        border-radius: 35px;
+        margin: 0;
+    }
+
+    .results-component-container .results-title {
+        margin-top: 22px;
+        font-size: 24px;
+    }
+
+    .results-component-container .results-score {
+        margin-top: 40px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .results-component-container .score {
+        font-size: 60px;
+    }
+
+    .results-component-container .max-score {
+        font-size: 16px;
+    }
+
+    .results-component-container .summary-container {
+        right: 0;
+        height: 390px;
+        margin-top: 20px;
+        padding-bottom: 0;
+    }
+
+    .summary-container button {
+        display: block;
+        width: 260px;
+        margin: 0 auto;
+    }
+    .attribution {
+        display: none;
+    }
 }
